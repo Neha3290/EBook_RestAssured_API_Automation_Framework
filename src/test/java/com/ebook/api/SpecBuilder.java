@@ -13,7 +13,7 @@ public class SpecBuilder {
 
     public static RequestSpecification getRequestSpec(){
        return new RequestSpecBuilder()
-                .setBaseUri(System.getProperty("BASE_URI"))
+                .setBaseUri("https://fakerestapi.azurewebsites.net")
                 .setBasePath(API+BASE_PATH)
                 .addFilter(new AllureRestAssured())
                 .log(LogDetail.ALL).build();
