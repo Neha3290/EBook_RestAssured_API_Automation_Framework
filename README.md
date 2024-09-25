@@ -39,30 +39,21 @@ To install and set up the RestAssuredTestNGFramework from the GitHub repository 
 
 Prerequisites
 Java JDK: Make sure you have Java JDK installed (preferably version 8 or higher). You can verify your installation by running:
-
-bash
-Copy code
-java -version
+    `java -version`
 
 Maven: Ensure that Apache Maven is installed. You can check this by running:
+    `mvn -version`
 
-bash
-Copy code
-mvn -version
 Git: Make sure you have Git installed to clone the repository.
 
 Step 1: Clone the Repository
 Open your terminal and run the following command to clone the repository:
 
-bash
-Copy code
-git clone https://github.com/Neha3290/EBook_RestAssured_API_Automation_Framework.git
+    `git clone https://github.com/Neha3290/EBook_RestAssured_API_Automation_Framework.git`
 
 Navigate into the cloned directory:
 
-`bash
-Copy code
-cd RestAssuredTestNGFramework`
+    `cd RestAssuredTestNGFramework`
 
 Step 2: Import into Your IDE
 You can open this project in your favorite IDE (like IntelliJ IDEA or Eclipse).
@@ -76,12 +67,11 @@ Open Eclipse.
 Go to File > Import.
 Choose Existing Maven Projects and click Next.
 Browse to the cloned RestAssuredTestNGFramework directory and click Finish.
+
 Step 3: Build the Project
 Once the project is imported, build the project using Maven. You can do this from the terminal within the project directory:
 
-bash
-Copy code
-mvn clean install
+    `mvn clean install`
 
 Step 4: To run locally have to set VM option, for that go to "Run >> Edit Configuration >> TestNG". Here in VM option add this below parameter
    `-DBASE_URI=https://fakerestapi.azurewebsites.net`
